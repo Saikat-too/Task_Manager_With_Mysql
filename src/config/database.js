@@ -4,8 +4,9 @@ const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
   password: '',
-  database: 'task_manager'
-});
+  database: 'task_manager',
+  ssl : false
+}); 
 
 connection.connect((err) => {
   if (err) throw err;
