@@ -9,7 +9,7 @@ app.use (express.json);
 app.use('/auth' , authRoutes);
 app.use('/task' ,taskRoutes);
 
-const Port =3005;
+const PORT =3005;
 app.listen(PORT , () =>{
-    console.log('Server is running on ${Port}')
+    console.log('Server is running on ${PORT}')
 });
